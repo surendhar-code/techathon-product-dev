@@ -1,0 +1,42 @@
+<!doctype html>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href="static\css\style.css">
+      </head>
+      <body style="background-image: url('static/images/signup.png');background-attachment: fixed;background-size:100% 100%;">
+        <div class="rectangle">
+          
+          <h1 class="portal" >COLLEGE MANAGEMENT SYSTEM</h1>
+          
+        </div>
+        
+        <div class="signupbox">
+            <h1>Sign Up</h1>
+            <form method='POST'>
+              <label>Username</label>
+                <input type="text" placeholder="Username" name="username">
+                <label>Email</label>
+                <input type="email" placeholder="Institution email-id only" name="email">
+                <label for="role">Choose Your Role</label>
+                <select name="role" id="role">
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                </select>
+                <label>Password</label>
+                <input type="password" placeholder="Password" name="password">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" name="confirm_password">
+                <div>
+                  {{message}}
+                </div> <br>
+                <button id="button" type="submit">Sign Up</button>
+                <p class="para-3">Already have an account? <a href="/signin">Sign In here</a></p>
+            </form>
+            
+            <br> <br>
+        </div>
+      </body>
+    </html>
+
+
+    
